@@ -1,0 +1,7 @@
+body .main_wraper {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
