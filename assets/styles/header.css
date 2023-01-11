@@ -16,9 +16,6 @@ header .menu_bg menu nav ul li a, header .menu_bg menu .catalog, header .bg_head
   color: #000000;
 }
 
-header {
-  outline: 1px solid red;
-}
 header .bg_header {
   display: flex;
   justify-content: center;

@@ -1,0 +1,102 @@
+.banner .slider_content .slider_item .item_wrap .item_text .item_title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+
+.banner .detail_block .detail_btn, .banner .slider_content .slider_item .item_wrap .item_text .item_subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 46.5px;
+  color: #FFFFFF;
+}
+
+.banner {
+  max-width: 1920px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.banner .slider_content {
+  width: 7680px;
+  outline: 1px solid green;
+  display: flex;
+  position: absolute;
+  left: 0px;
+  transition: all 2s;
+}
+.banner .slider_content .slider_item {
+  max-width: 1920px;
+  width: 100%;
+  background: radial-gradient(63.57% 111.48% at 50% 50%, #D3B482 0%, #AC9370 100%);
+}
+.banner .slider_content .slider_item .item_wrap {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 400px;
+  background: url(../images/img/maskGroup.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.banner .slider_content .slider_item .item_wrap .item_text {
+  margin-top: 75px;
+  max-width: 1180px;
+  width: 100%;
+  min-height: 175px;
+}
+.banner .slider_content .slider_item .item_wrap .item_text .item_title {
+  text-transform: uppercase;
+  max-width: 550px;
+}
+.banner .slider_content .slider_item .item_wrap .item_text .item_subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 680px;
+}
+.banner .slider_content .item2 {
+  background: linear-gradient(267.03deg, #D3B482 15.99%, #AC9370 99.38%);
+}
+.banner .slider_content .item3 {
+  background: radial-gradient(63.57% 111.48% at 50% 50%, #D3B482 0%, #AC9370 100%);
+}
+.banner .slider_content .item4 {
+  background: radial-gradient(63.57% 111.48% at 50% 50%, #D3B482 0%, #AC9370 100%);
+}
+.banner .detail_block {
+  position: absolute;
+  top: 300px;
+  left: 370px;
+}
+.banner .detail_block .detail_btn {
+  width: 123px;
+  height: 42px;
+  background: #F9A82F;
+  border-radius: 100px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.banner .detail_block .btns_block {
+  width: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner .detail_block .btns_block .btn {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #E8CB9F;
+}
+.banner .detail_block .btns_block .btn:hover {
+  cursor: pointer;
+}
+.banner .detail_block .btns_block .active {
+  background-color: white;
+}/*# sourceMappingURL=slider.css.map */
