@@ -4,7 +4,7 @@ import userData from './userdata.js';
 
 // slider animation
 !(function(){
-    let sliderContent = document.querySelector('.slider_content');
+    let sliderContent = document.querySelector('.banner_content');
     let btnsBlock = document.querySelector('.btns_block');
     let btns = document.querySelectorAll('.btn');
 
@@ -23,15 +23,15 @@ import userData from './userdata.js';
         }
 
         if(e.target.classList.contains('btn2')) {
-            sliderContent.style.left = '-1920px';
+            sliderContent.style.left = '-1200px';
         }
 
         if(e.target.classList.contains('btn3')) {
-            sliderContent.style.left = '-3840px';
+            sliderContent.style.left = '-2400px';
         }
 
         if(e.target.classList.contains('btn4')) {
-            sliderContent.style.left = '-5760px';
+            sliderContent.style.left = '-3600px';
         }
     })
 })();
