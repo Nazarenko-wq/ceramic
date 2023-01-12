@@ -85,6 +85,11 @@
   font-weight: 700;
   line-height: 19px;
   margin-bottom: 20px;
+  transition: all 0.5s;
+}
+.banner .detail_block .detail_btn:hover {
+  background: white;
+  color: black;
 }
 .banner .detail_block .btns_block {
   width: 54px;

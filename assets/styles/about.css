@@ -38,6 +38,11 @@
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  transition: all 0.5s;
+}
+.wrap_about .short_discription_wrap .short_discription .short_btn:hover {
+  background: black;
+  color: white;
 }
 .wrap_about .service_wrap {
   width: 100%;

@@ -21,6 +21,7 @@ header {
     .bg_header {
         display: flex;
         justify-content: center;
+        background: #F8F8F8;
         .header_wraper {
             max-width: 1200px;
             width: 100%;
@@ -80,6 +81,12 @@ header {
                 display: flex;
                 justify-content: space-between;
 
+                img {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
                 .cart_block {
                     display: flex;
                     align-items: center;
@@ -108,6 +115,21 @@ header {
             .catalog {
                 @extend %text;
                 color: #F9A82F;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 7px;
+                    height: 7px;
+                    background: url(../images/svg/arrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-left: 5px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             nav {
@@ -122,6 +144,11 @@ header {
                     li {
                         a {
                             @extend %text;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                color: #F9B248;
+                            }
                         }
                     }
                 }

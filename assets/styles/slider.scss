@@ -100,6 +100,12 @@
             font-weight: 700;
             line-height: 19px;
             margin-bottom: 20px;
+            transition: all 0.5s;
+
+            &:hover {
+                background: white;
+                color: black;
+            }
         }
 
         .btns_block {

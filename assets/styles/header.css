@@ -19,6 +19,7 @@ header .menu_bg menu nav ul li a, header .menu_bg menu .catalog, header .bg_head
 header .bg_header {
   display: flex;
   justify-content: center;
+  background: #F8F8F8;
 }
 header .bg_header .header_wraper {
   max-width: 1200px;
@@ -66,6 +67,9 @@ header .bg_header .header_wraper .user_block {
   display: flex;
   justify-content: space-between;
 }
+header .bg_header .header_wraper .user_block img:hover {
+  cursor: pointer;
+}
 header .bg_header .header_wraper .user_block .cart_block {
   display: flex;
   align-items: center;
@@ -87,6 +91,19 @@ header .menu_bg menu {
 header .menu_bg menu .catalog {
   color: #F9A82F;
 }
+header .menu_bg menu .catalog::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: url(../images/svg/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+}
+header .menu_bg menu .catalog:hover {
+  cursor: pointer;
+}
 header .menu_bg menu nav {
   margin-left: auto;
   max-width: 860px;
@@ -95,4 +112,10 @@ header .menu_bg menu nav {
 header .menu_bg menu nav ul {
   display: flex;
   justify-content: space-between;
+}
+header .menu_bg menu nav ul li a {
+  transition: all 0.5s;
+}
+header .menu_bg menu nav ul li a:hover {
+  color: #F9B248;
 }/*# sourceMappingURL=header.css.map */
