@@ -1,4 +1,7 @@
 "use strict"
+
+import userData from './userdata.js';
+
 // slider animation
 !(function(){
     let sliderContent = document.querySelector('.slider_content');
@@ -12,7 +15,7 @@
             })
 
             e.target.classList.add('active');
-            console.log(e.target);
+            // console.log(e.target);
         }
 
         if(e.target.classList.contains('btn1')) {
@@ -71,4 +74,71 @@
         logo.src = `./assets/images/img/brand_icon${i}.png`;
         item.append(logo);
     }
+})();
+
+
+// create comment items
+!(function(){
+    let parentItem = document.querySelector('.comments_content');
+
+    for(let i = 0; i < userData.length; i++) {
+        let item = document.createElement('div');
+        item.classList.add('comment_item');
+        parentItem.append(item);
+
+        let itemHead = document.createElement('div');
+        itemHead.classList.add('comment_item_head');
+        item.append(itemHead);
+
+        let itemImg = document.createElement('img');
+        itemImg.classList.add('user_img');
+        itemImg.src = `${userData[i].path}`;
+        itemHead.append(itemImg);
+
+        let userDate = document.createElement('div');
+        itemHead.classList.add('user_data');
+        itemHead.append(userDate);
+
+        let userName = document.createElement('h4');
+        userName.classList.add('user_name');
+        userName.textContent = `${userData[i].name}`;
+        userDate.append(userName);
+
+        let date = document.createElement('p');
+        date.textContent = `${userData[i].date}`;
+        date.classList.add('date');
+        userDate.append(date);
+
+        let itemText = document.createElement('comment_item_text');
+        itemText.textContent = `${userData[i].text}`;
+        itemText.classList.add('comment_item_text');
+        item.append(itemText);
+    }
+})();
+
+// comment slider
+!(function(){
+    let btnParent = document.querySelector('.comments_btns');
+    let sliderContent = document.querySelector('.comments_content');
+
+    btnParent.addEventListener('click', (e) => {
+        if(e.target.classList.contains('comment_btn')) {
+            let btns = document.querySelectorAll('.comment_btn');
+
+            btns.forEach(elem => elem.classList.remove('active_btn'));
+            e.target.classList.add('active_btn');
+        }
+
+        if(e.target.classList.contains('comment_btn1')) {
+            sliderContent.style.left = '0px';
+        }
+
+        if(e.target.classList.contains('comment_btn2')) {
+            sliderContent.style.left = '-400px';
+        }
+
+        if(e.target.classList.contains('comment_btn3')) {
+            sliderContent.style.left = '-800px';
+        }
+    })
 })();
