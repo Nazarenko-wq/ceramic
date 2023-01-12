@@ -22,6 +22,7 @@
   height: 400px;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 .banner .slider_content {
   width: 7680px;

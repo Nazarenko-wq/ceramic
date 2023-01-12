@@ -33,6 +33,31 @@
     })
 })();
 
+
+// create catigories
+!(function(){
+    const data = ['розетки', 'выключатели', 'коробки распаечные', 'изоляторы кабельные', 'втулки', 'рамки', 'провода', 'аксесуары', 'лампы', 'светильники',];
+    let parent = document.querySelector('.categories');
+
+    for(let i = 0; i < data.length; i++) {
+        let item = document.createElement('div');
+        item.classList.add('brend_item');
+        parent.append(item);
+
+        let itemBg = document.createElement('div');
+        itemBg.style.background = `url(./assets/images/img/brand_item${i + 1}.png)`;
+        itemBg.style.backgroundRepeat = 'no-repeat';
+        itemBg.style.backgroundPosition = 'left 50%';
+        itemBg.classList.add('brand_item_bg');
+        item.append(itemBg);
+
+        let itemText = document.createElement('div');
+        itemText.classList.add('brand_text');
+        itemText.textContent = data[i];
+        itemBg.append(itemText);
+    }
+})();
+
 // create brands block
 !(function(){
     let brands = document.querySelector('.brands');
