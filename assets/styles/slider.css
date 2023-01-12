@@ -54,11 +54,13 @@
 .banner .slider_content .slider_item .item_wrap .item_text .item_title {
   text-transform: uppercase;
   max-width: 550px;
+  margin-bottom: 30px;
 }
 .banner .slider_content .slider_item .item_wrap .item_text .item_subtitle {
   font-weight: 400;
   font-size: 16px;
   max-width: 680px;
+  line-height: 27.5px;
 }
 .banner .slider_content .item2 {
   background: linear-gradient(267.03deg, #D3B482 15.99%, #AC9370 99.38%);

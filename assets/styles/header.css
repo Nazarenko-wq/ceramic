@@ -21,7 +21,7 @@ header .bg_header {
   justify-content: center;
 }
 header .bg_header .header_wraper {
-  max-width: 1180px;
+  max-width: 1200px;
   width: 100%;
   padding: 27px 10px;
   display: flex;

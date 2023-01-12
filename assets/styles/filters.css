@@ -1,0 +1,95 @@
+main .filters .categories .brend_item .brand_item_bg .brand_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #151515;
+}
+
+main {
+  max-width: 1220px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+main .filters .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 70px;
+}
+main .filters .categories .brend_item {
+  width: 217px;
+  height: 145px;
+  background: #F7F7F7;
+  margin-bottom: 14px;
+  transition: all 1s;
+}
+main .filters .categories .brend_item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+main .filters .categories .brend_item .brand_item1 {
+  background: url(../images/img/brand_item1.png);
+}
+main .filters .categories .brend_item .brand_item2 {
+  background: url(../images/img/brand_item2.png);
+}
+main .filters .categories .brend_item .brand_item3 {
+  background: url(../images/img/brand_item3.png);
+}
+main .filters .categories .brend_item .brand_item4 {
+  background: url(../images/img/brand_item4.png);
+}
+main .filters .categories .brend_item .brand_item5 {
+  background: url(../images/img/brand_item5.png);
+}
+main .filters .categories .brend_item .brand_item6 {
+  background: url(../images/img/brand_item6.png);
+}
+main .filters .categories .brend_item .brand_item7 {
+  background: url(../images/img/brand_item7.png);
+}
+main .filters .categories .brend_item .brand_item8 {
+  background: url(../images/img/brand_item8.png);
+}
+main .filters .categories .brend_item .brand_item9 {
+  background: url(../images/img/brand_item9.png);
+}
+main .filters .categories .brend_item .brand_item10 {
+  background: url(../images/img/brand_item10.png);
+}
+main .filters .categories .brend_item .brand_item_bg {
+  width: 217px;
+  height: 145px;
+  background-repeat: no-repeat;
+  background-position: left 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+main .filters .categories .brend_item .brand_item_bg .brand_text {
+  max-width: 125px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .filters .brands {
+  display: flex;
+  justify-content: space-between;
+}
+main .filters .brands .item {
+  max-width: 110.14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .filters .brands .item img:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=filters.css.map */
